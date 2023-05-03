@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    --light-black: #5f6368;
+  --dark-black: #202124;
+  --white: white;
+  --dark-green: #01875f;
+  --light-green: #e6f3ef;
+  --stroke: #ececec;
+  --dark-red: #c71c56;
+  --light-red: #ffebee;
+  font-family: "Poppins", sans-serif;
+}
+.container{
+    min-height:100vh;
+    overflow: hidden;
+}
+.navigation{
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-right{
+    display:flex;
+    justify-content: space-evenly;
+}
+.nav-right span{
+    padding: 0.4375rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+.home span{
+    color:var(--dark-black);
+}
+.person span{
+    color:var(--dark-black);
+}
+.spa span{
+    color: var(--dark-green);
+}
+.home span:hover{
+    color: var(--dark-green); 
+}
+.person span:hover{
+    color: var(--dark-green);
+}
+.spa span:hover{
+    color: var(--dark-green);
+}
+.sub-div{
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-evenly ;
+    min-height: 85vh;
+}
+.heading{
+    font-size: 2.5rem;
+    line-height: 1;
+    font-weight: 600;
+}
+.h2{
+    color:var(--dark-black) ;  
+}
+.h1{
+    color:var(--dark-green) ;
+}
+.left-div{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30px;
+    align-items: left;
+}
+.img2
+{
+    margin-left: 10px;
+    margin-top: 35px;
+    width: 18.75rem;
+}
+.right-div
+{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.para{
+    text-align: left;
+    font-size: 1.12rem;
+    font-weight: 600;
+
+}
+.error-div{
+    margin-top: 20px;
+    background-color: #FFEBEE;
+    border-radius: 15px;
+    display: none;
+    width: 15.625rem;
+    
+    
+}
+.para3{
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom:15px ;
+    font-family: "Poppins";
+    font-size: 12px;
+    
+}
+.login{
+    
+    width: 15.625rem;
+    height: 3.125rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.left-form{
+    margin-top: 42px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+input{
+    font-family: "Poppins", sans-serif;
+    border: none;
+    outline: none;
+}
+
+#text{
+    
+    padding: 10px 30px;
+    border: 2px solid #ECECEC;
+}
+.user1 span{
+    position: absolute;
+    margin-top: 12px;
+    margin-left: 2px;
+}
+.lock span,.clock span,.loca span,.tele span{
+    position: absolute;
+    margin-top: 27px;
+    margin-left: 2px;
+}
+.lock span:hover,.clock span:hover,.loca span:hover,.tele span:hover,.user1 span:hover{
+    color: var(--dark-green);
+}
+#text:focus,#text:hover,#phone:focus,#phone:hover,#pass:focus,#pass:hover,#cpass:focus,#cpass:hover,#location:focus,#location:hover{
+    border: 3px solid var(--dark-green);
+}
+#phone{
+    
+    margin-top:15px ;
+    padding: 10px 30px;
+    border: 2px solid #ECECEC;
+   
+}
+#pass{
+    margin-top:15px ;
+    padding: 10px 30px;
+    border: 2px solid #ECECEC;
+}
+#cpass{
+    padding: 10px 30px;
+    margin-top:15px ;
+    border: 2px solid #ECECEC;
+}
+#location{
+    padding: 10px 30px;
+    margin-top:15px ;
+    border: 2px solid #ECECEC;
+}
+#button{
+    margin-top:15px ;
+    border: 2px solid #ECECEC;
+    background-color: var(--dark-green);
+}
+
+
+
+#submit{
+    font-family: "Poppins", sans-serif;
+    width: 15.625rem;
+    height: 3.125rem;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 15px;
+    width: 100%;
+    color: #FFEBEE;
+    border: 3px solid #01875f;
+    margin-bottom: 15px;
+    background-color: var(--dark-green);
+}
+.account{
+    color: #5F6368;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    font-size: 14px;
+}
+@media only screen and (max-width:62.5em)
+{
+    .sub-div
+    {
+        justify-content: space-between;
+    }
+    
+}
+@media only screen and (max-width:62.5em)
+{
+    .left-div{
+        display: none;
+    }
+.navigation{
+    padding:20px;
+}
+.sub-div{
+    padding:20px;
+}
+.right-div{
+        width: 100%;
+}
+.login-div{
+        justify-content: space-evenly;
+    }
+}

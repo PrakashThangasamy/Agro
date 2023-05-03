@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    --light-black: #5f6368;
+  --dark-black: #202124;
+  --white: white;
+  --dark-green: #01875f;
+  --light-green: #e6f3ef;
+  --stroke: #ececec;
+  --dark-red: #c71c56;
+  --light-red: #ffebee;
+  font-family: "Poppins", sans-serif;
+}
+.container{
+    min-height:100vh;
+    overflow: hidden;
+}
+.close{
+    display:flex ;
+    justify-content:flex-end;
+    cursor: pointer;
+    color:#01875f
+}
+.closeall span{
+    text-decoration: none;
+    color:black;
+}
+.farinfo{
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+}
+.img img
+{
+    width: 100px;
+    height: 100px;
+}
+.name{
+    margin-left: 10px;
+    color:var(--dark-green);
+}
+.tele span{
+    margin-left: -60px;
+}
+.location{
+    margin-top: 10px;
+    margin-top: -30px;
+    margin-left: -20px;
+    position: absolute;
+    
+}
+.loca span{
+    margin-left: -60px;
+}
+ .phoneno{
+    margin-left: -20px;
+     margin-top: 20px;
+    margin-top: -30px;
+     position: absolute;
+ }
+ .sub-div{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+input{
+    font-family: "Poppins", sans-serif;
+    width: 50%;
+    border: none;
+    outline:none;
+    border:2px solid #ECECEC;
+    border-radius: 10px;
+    padding: 5px 30px;
+}
+.right-div{
+    display: grid;
+    grid-template: repeat(4,400px)/repeat(5,1fr);
+    margin-top: 40px;
+    margin-left: 150px;
+    font-family: "Poppins", sans-serif;
+}
+.orange{
+    width: 200px;
+    height: 360px;
+    border: 3px solid #ECECEC;
+    border-radius: 25px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+
+}
+.orange:hover{
+    transform: perspective(1000px) translateZ(200px);
+}
+.fruit{
+    margin: 10px;
+    margin-top: 0px;
+    width: 150px;
+    height:100px;
+}
+.orange h1{
+    font-size: 20px;
+    margin-bottom:5px ;
+    color: #202124;
+}
+.orange p,.orange h1,.orange h2{
+    margin:0px 20px 23px 10px;
+    word-wrap: break-word;
+    
+}
+button{
+    padding: 5px;
+    position:absolute;
+    margin-top: -55px;
+    margin-left: 150px;
+    border: none;
+    background-color: var(--dark-green);
+    font-size: 15px;
+    border:2px solid var(--dark-green);
+    color:white;
+    border-radius: 100px;
+    cursor:pointer;
+}  
+.quan_word{
+    position:relative;
+    font-family: "Poppins", sans-serif;
+    font-size: 13px ;   
+}
+.cart_quan{
+    position:absolute;
+    margin-top: -50px;
+    margin-left:105px ;
+    width: 40px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+@media only screen and (max-width:80em)
+{
+    .right-div{
+        
+        margin-left: 70px;
+    } 
+   
+}
+@media only screen and (max-width:76em)
+{
+    .right-div{
+        
+        grid-template: repeat(6,400px)/repeat(4,1fr);
+        margin-left: 70px;
+    } 
+   
+}
+@media only screen and (max-width:70em)
+{
+    .right-div{
+        
+        grid-template: repeat(6,400px)/repeat(3,1fr);
+        margin-left: 100px;
+    } 
+   
+}
+@media only screen and (max-width:55em)
+{
+    .right-div{
+        grid-template: repeat(8,400px)/repeat(2,1fr);
+        margin-left: 150px;    
+       
+    } 
+    
+}
+@media only screen and (max-width:38em)
+{
+    .right-div{
+        grid-template: repeat(20,400px)/repeat(1,1fr);
+        margin-left: 170px;
+       
+    } 
+    
+}
+@media only screen and (max-width:28em)
+{
+    .right-div{
+        
+        margin-left: 110px;
+       
+    } 
+    
+}
+@media only screen and (max-width:23em)
+{
+    .right-div{
+        
+        margin-left: 80px;
+       
+    } 
+    
+}   

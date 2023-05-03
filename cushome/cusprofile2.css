@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    --light-black: #5f6368;
+  --dark-black: #202124;
+  --white: white;
+  --dark-green: #01875f;
+  --light-green: #e6f3ef;
+  --stroke: #ececec;
+  --dark-red: #c71c56;
+  --light-red: #ffebee;
+  font-family: "Poppins", sans-serif;
+}
+.container{
+    min-height:100vh;
+    overflow: hidden;
+}
+.navigation{
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-right{
+    display:flex;
+    justify-content: space-evenly;
+}
+.nav-right span{
+    padding: 0.4375rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+.profile span{
+    color: var(--dark-green);
+}
+.home span:hover{
+    color: var(--dark-green);
+}
+.home span{
+    color:var(--dark-black)
+}
+.spa span:hover{
+    color: var(--dark-green);
+}
+.spa span{
+    color:var(--dark-black)
+}
+.subdiv{
+    margin-top: 40px;
+    margin-left: 490px;
+    border: 3px solid var(--dark-green);
+    width: 400px;
+    border-radius: 10px;
+}
+.left-div{
+    margin-top: 20px;
+    margin-left: 129px;
+}
+.subdiv .img img{
+    width:100px;
+    height: 100px;
+}
+.name{
+    margin-left: 15px;
+    color:var(--dark-green);
+}
+
+.phoneno{
+    position: absolute;
+    
+    color:var(--dark-green);
+}
+button{
+    color: white;
+    background-color: var(--dark-green);
+    border: none;
+    border: 3px solid var(--dark-green);
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.cart a{
+    text-decoration: none;
+    color:white;
+}
+.cart{
+    width:90px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.profile{
+    margin-bottom: 20px;
+    width:90px;
+}
+.cancel{
+    background-color:white;
+    color:#01875f;
+    position: absolute;
+    width:90px; 
+    margin-top: 15px;
+    margin-bottom: 20px;
+    margin-left: -80px;
+}
+.logout{
+    position: relative;
+    width:90px;
+    margin-top: -30px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+}
+
+@media only screen and (max-width:80em)
+{
+    .subdiv{
+        margin-left: 400px;
+    }
+}
+@media only screen and (max-width:75em)
+{
+    .subdiv{
+        margin-left: 400px;
+    }
+}
+@media only screen and (max-width:60em)
+{
+    .subdiv{
+        margin-left: 200px;
+  
+    }
+}
+@media only screen and (max-width:45em)
+{
+    .subdiv{
+        margin-left: 150px;
+  
+    }
+}
+@media only screen and (max-width:40em)
+{
+    .subdiv{
+        margin-left: 70px;
+        width:300px;
+  
+    }
+    .left-div{
+        margin-left: 100px;
+    }
+}
+@media only screen and (max-width:23em)
+{
+    .subdiv{
+        width:300px;
+        margin-left: 40px;
+  
+    }
+    .left-div{
+        margin-left: 100px;
+    }
+}
+@media only screen and (max-width:62.5em)
+{
+    .sub-div
+    {
+        justify-content: space-between;
+    }
+    
+}
+@media only screen and (max-width:50em)
+{
+.navigation{
+    padding:20px;
+}
+}

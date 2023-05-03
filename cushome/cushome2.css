@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    --light-black: #5f6368;
+  --dark-black: #202124;
+  --white: white;
+  --dark-green: #01875f;
+  --light-green: #e6f3ef;
+  --stroke: #ececec;
+  --dark-red: #c71c56;
+  --light-red: #ffebee;
+  font-family: "Poppins", sans-serif;
+}
+.container{
+    min-height:100vh;
+    overflow: hidden;
+}
+.navigation{
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-right{
+    display:flex;
+    justify-content: space-evenly;
+}
+.nav-right span{
+    padding: 0.4375rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+.spa span{
+    color: var(--dark-green);
+}
+.home span:hover{
+    color: var(--dark-green);
+}
+.profile span:hover{
+    color: var(--dark-green);
+}
+.home span{
+    color: var(--dark-black);
+}
+.profile span{
+    color: var(--dark-black);
+}
+.sub-div{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.left-div{
+    margin-left: 400px;
+}
+.left-div span{
+    position: absolute;
+   margin-top: -15px;
+   margin-left: -37px;
+    cursor: pointer;
+}
+input{
+    font-family: "Poppins", sans-serif;
+    width: 50%;
+    border: none;
+    outline:none;
+    border:2px solid #ECECEC;
+    border-radius: 10px;
+    padding: 5px 30px;
+}
+.right-div{
+    display: grid;
+    grid-template: repeat(6,400px)/repeat(5,1fr);
+    margin-top: 40px;
+    margin-left: 150px;
+    font-family: "Poppins", sans-serif;
+}
+.orange{
+    width: 200px;
+    height: 310px;
+    border: 3px solid #ECECEC;
+    border-radius: 25px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+
+}
+.fruit{
+    margin: 10px;
+    margin-left: 40px;
+    width:100px;
+    height: 100px;
+}
+.orange p,.orange h1,.orange h2{
+    margin: 10px;
+    
+}
+.orange a{
+    text-decoration:none;
+    color:#01875f
+}
+.expand span{
+    border: 3px solid #E6F3EF;
+   background-color: #E6F3EF;
+   border-radius: 10px;
+   margin-left: 150px;
+}
+@media only screen and (max-width:62.5em)
+{
+    .sub-div
+    {
+        justify-content: space-between;
+    }
+    
+}
+@media only screen and (max-width:450em)
+{
+.navigation{
+    padding:20px;
+}
+.left-div{
+    margin-left: 150px;
+}
+input{
+    width:70%;
+}
+}
+@media only screen and (max-width:45em)
+{
+    .left-div{
+        margin-left: 150px;
+    }
+    input{
+        width:70%;
+    }
+
+}
+@media only screen and (max-width:30em)
+{
+    .left-div{
+        margin-left: 50px;
+    }
+    input{
+        width:80%;
+    }
+
+}
+@media only screen and (max-width:21em)
+{
+    .left-div{
+        margin-left: 20px;
+    }
+    input{
+        width:80%;
+    }
+
+}
+@media only screen and (max-width:80em)
+{
+    .right-div{
+        
+       margin-left: 100px;
+    } 
+   
+}
+@media only screen and (max-width:76em)
+{
+    .right-div{
+        
+        grid-template: repeat(6,400px)/repeat(4,1fr);
+    } 
+   
+}
+@media only screen and (max-width:70em)
+{
+    .right-div{
+        
+        grid-template: repeat(6,400px)/repeat(3,1fr);
+        margin-left: 100px;
+    } 
+   
+}
+@media only screen and (max-width:55em)
+{
+    .right-div{
+        grid-template: repeat(8,400px)/repeat(2,1fr);
+        margin-left: 150px;
+       
+    } 
+    
+}
+@media only screen and (max-width:38em)
+{
+    .right-div{
+        grid-template: repeat(20,400px)/repeat(1,1fr);
+        margin-left: 170px;
+       
+    } 
+    
+}
+@media only screen and (max-width:30em)
+{
+    .right-div{
+        
+        margin-left: 100px;
+       
+    } 
+    
+}
+@media only screen and (max-width:23em)
+{
+    .right-div{
+        
+        margin-left: 80px;
+       
+    } 
+    
+}

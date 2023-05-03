@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    --light-black: #5f6368;
+  --dark-black: #202124;
+  --white: white;
+  --dark-green: #01875f;
+  --light-green: #e6f3ef;
+  --stroke: #ececec;
+  --dark-red: #c71c56;
+  --light-red: #ffebee;
+  font-family: "Poppins", sans-serif;
+}
+.container{
+    min-height:100vh;
+    overflow: hidden;
+}
+.navigation{
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-right{
+    display:flex;
+    justify-content: space-evenly;
+}
+.nav-right span{
+    padding: 0.4375rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+.profile span{
+    color: var(--dark-green);
+}
+.home span:hover{
+    color: var(--dark-green);
+}
+.spa span:hover{
+    color: var(--dark-green);
+}
+.home span{
+    color: var(--dark-black);
+}
+.spa span{
+    color: var(--dark-black);
+}
+.subdiv{
+    margin-top: 40px;
+    margin-left: 550px;
+    border: 3px solid #ECECEC;
+    width:400px;
+    border-radius: 40px;
+}
+.left-div{
+    margin-top: 20px;
+    margin-left: 149px;
+}
+.subdiv .img img{
+    width:100px;
+    height: 100px;
+}
+.imgbutton button{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+}
+.upload a{
+    text-decoration: none;
+    color: white;
+}
+.upload{
+   position: absolute;
+    left:650px;
+    top: 250px;
+    border: 3px solid var(--dark-green);
+    background-color: var(--dark-green);
+}
+.delete a{
+    text-decoration: none;
+    color: var(--dark-green); 
+}
+.delete{
+    margin-left: 70px;
+     
+}
+input{
+    font-family: "Poppins", sans-serif;
+    padding: 10px;
+    padding-left: 25px;
+    margin-left: -50px;
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    border: 3px solid #ECECEC;
+    border-radius: 10px;
+}
+.file{
+    border: none;
+    border: 3px solid #ECECEC;
+    margin-left:-60px ;
+    width: 230px;
+}
+.loca span{
+    position: absolute;
+    margin-top: 19px;
+    margin-left: -60px;
+    color: var(--dark-green);
+}
+.loca input{
+    margin-left: -60px;
+}
+.tele input{
+    margin-left: -60px; 
+    margin-bottom: 10px;
+}
+.tele span{
+    position: absolute;
+    margin-top: 19px;
+    margin-left: -60px;
+    color: var(--dark-green);
+}
+.button button{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+}
+.cancel{
+    margin-left: -50px;
+    color: white;
+    border: 3px solid var(--dark-green);
+    background-color: var(--dark-green);
+}
+.edit{
+    margin-left: 50px;
+    color: var(--dark-green); 
+}
+@media only screen and (max-width:80em)
+{
+    .subdiv{
+        margin-left: 430px;
+    }
+    .upload{
+        left:500px      
+    }
+}
+@media only screen and (max-width:70em)
+{
+    .subdiv{
+        margin-left: 300px;
+    }
+    .upload{
+        left:400px      
+    }
+}
+@media only screen and (max-width:60em)
+{
+    .subdiv{
+        margin-left: 200px;
+    }
+    .upload{
+        left:300px      
+    }
+}
+@media only screen and (max-width:50em)
+{
+    .subdiv{
+        margin-left: 200px;
+    }
+    .upload{
+        left:300px      
+    }
+}
+@media only screen and (max-width:40em)
+{
+    .subdiv{
+        margin-left:60px;
+        width: 300px;
+    }
+    .left-div{
+        margin-left: 100px;
+    }
+    .upload{
+        left:120px      
+    }
+    .file{
+        margin-left:-80px ;
+        width: 250px;
+    }
+}
+@media only screen and (max-width:30em)
+{
+    .subdiv{
+        margin-left:40px;
+        width: 300px;
+    }
+    .left-div{
+        margin-left: 100px;
+    }
+    .upload{
+        left:90px      
+    }
+    .file{
+        margin-left:-80px ;
+        width: 250px;
+    }
+}
+@media only screen and (max-width:26.75em)
+{
+    .subdiv{
+        margin-left:40px;
+        width: 300px;
+    }
+    .left-div{
+        margin-left: 100px;
+    }
+    .upload{
+        left:90px      
+    }
+    .file{
+        margin-left:-80px ;
+        width: 250px;
+    }
+}
+@media only screen and (max-width:20em)
+{
+    .subdiv{
+        margin-left:10px;
+        width: 300px;
+    }
+    .left-div{
+        margin-left: 100px;
+    }
+    .upload{
+        left:60px      
+    }
+    .file{
+        margin-left:-80px ;
+        width: 250px;
+    }
+}
+@media only screen and (max-width:62.5em)
+{
+    .sub-div
+    {
+        justify-content: space-around;
+    }
+    
+}
+@media only screen and (max-width:50em)
+{
+.navigation{
+    padding:20px;
+}}
